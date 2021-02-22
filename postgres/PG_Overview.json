@@ -28,7 +28,7 @@
         "rgba(50, 172, 45, 0.9)",
         "rgba(68, 126, 188, 0.9)"
       ],
-      "datasource": "PROMETHEUS",
+      "datasource": "${PROMETHEUS}",
       "format": "none",
       "gauge": {
         "maxValue": 2,
@@ -144,7 +144,7 @@
         "rgba(50, 172, 45, 0.9)",
         "rgba(68, 126, 188, 0.9)"
       ],
-      "datasource": "PROMETHEUS",
+      "datasource": "${PROMETHEUS}",
       "format": "none",
       "gauge": {
         "maxValue": 2,
@@ -267,7 +267,7 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": "PROMETHEUS",
+        "datasource": "${PROMETHEUS}",
         "definition": "",
         "hide": 2,
         "includeAll": true,
@@ -317,6 +317,14 @@
   },
   "timezone": "browser",
   "title": "PostgreSQL Overview",
-  "uid": "pxinDnNik",
-  "version": 2
+  "__inputs": [
+    {
+      "name": "PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ]
 }

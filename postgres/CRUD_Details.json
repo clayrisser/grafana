@@ -24,7 +24,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "PROMETHEUS",
+      "datasource": "${PROMETHEUS}",
       "fill": 1,
       "fillGradient": 0,
       "gridPos": {
@@ -139,7 +139,7 @@
           "text": "pg1",
           "value": "pg1"
         },
-        "datasource": "PROMETHEUS",
+        "datasource": "${PROMETHEUS}",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -164,7 +164,7 @@
           "text": "postgres",
           "value": "postgres"
         },
-        "datasource": "PROMETHEUS",
+        "datasource": "${PROMETHEUS}",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -191,7 +191,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "PROMETHEUS",
+        "datasource": "${PROMETHEUS}",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -218,7 +218,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "PROMETHEUS",
+        "datasource": "${PROMETHEUS}",
         "definition": "",
         "hide": 0,
         "includeAll": false,
@@ -268,6 +268,14 @@
   },
   "timezone": "browser",
   "title": "CRUD Details",
-  "uid": "ubhVvnNmk",
-  "version": 2
+  "__inputs": [
+    {
+      "name": "PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ]
 }
